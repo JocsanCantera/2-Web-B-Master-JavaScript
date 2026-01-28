@@ -1,0 +1,12 @@
+console.log(typeof 42);
+console.log(typeof 'Veinticinco');
+console.log(typeof -666);
+console.log(typeof true);
+console.log(typeof 0);
+console.log(typeof '"');
+let correo = null;
+console.log(typeof correo);
+let dir;
+console.log(typeof dir);
+let falso = false;
+console.log(typeof falso);
