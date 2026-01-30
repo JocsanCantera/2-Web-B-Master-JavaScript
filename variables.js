@@ -46,3 +46,9 @@ console.log(valor1 <= valor2);
 console.log(10 != '10');
 // Distinto que estricto
 console.log(10 !== '10');
+
+console.log(valor1 + 2);
+valor1 = valor1 + 3;
+valor1 += 4;
+valor2 -= 8;
+console.log(valor1);
