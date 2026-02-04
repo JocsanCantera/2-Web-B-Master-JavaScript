@@ -1,4 +1,4 @@
-let edad = 20;
+let edad = 17;
 let tieneINE = true;
 
 if(edad >= 18){
@@ -8,7 +8,7 @@ if(edad >= 18){
 }
 
 
-let calificacion = 9;
+let calificacion = 4;
 
 if (calificacion >= 9){
     console.log("Eres increible");
@@ -28,7 +28,7 @@ if(edad >= 18 && tieneINE){
     console.log("No puedes votar")
 }
 
-let numero = prompt("Ingresa un numero:")
+let numero = 26;
 
 numero = parseInt(numero);
 
