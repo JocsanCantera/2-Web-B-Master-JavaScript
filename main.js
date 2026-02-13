@@ -1,67 +1,41 @@
-// Este es un comentario en JavaScript
+// Seleccionamos nuestroe elemento del DOM
 
-// Tipos de datos
+const titulo = document.getElementById("titulo");
+console.log(titulo);
 
-//number: enteros y decimales
-let edad = 24;
-let precio = 199.99;
-console.log("Tipo de dato Number:");
-console.log(edad);
-console.log(precio);
-console.log(typeof edad);
-console.log(typeof precio);
+const texto = document.getElementById("texto");
+console.log(texto);
 
-// String (texto)
-let nombre = 'Randy';
-let saludo = 'Hola Mundo';
-console.log("Tipo de dato String:");
-console.log(nombre);
-console.log(saludo);
-console.log(typeof nombre);
-console.log(typeof saludo);
+const caja = document.getElementById("caja");
+console.log(caja);
 
+const BtnClase = document.getElementById("BtnClase");
 
-// Boolean (Verdadero y Falso)
-let esMayorDeEdad = true;
-let tienePermiso = false;
-console.log("Tipo de dato Bolean:");
-console.log(esMayorDeEdad);
-console.log(tienePermiso);
-console.log(typeof esMayorDeEdad);
+const BtnTexto = document.getElementById("BtnTexto");
+const BtnColor = document.getElementById("BtnColor");
+const BtnOcultar = document.getElementById("BtnOcultar");
 
+// Cambiar texto
+BtnTexto.addEventListener("click", () =>{
+    titulo.textContent = 'Cambiaste el texto desde JavaScript'
+});
 
-// undefined (variable declarada sin valor)
-let telefono;
-console.log("Tipo de dato Boolean");
-console.log(telefono);
-console.log(typeof telefono);
+// Cambiar colores
+BtnColor.addEventListener("click", () =>{
+    titulo.style.color = 'brown';
+    caja.style.backgroundColor = 'red';
+});
 
+// Ocultar caja
+BtnOcultar.addEventListener("click", () =>{
+    if (caja.style.display === "none") {
+        caja.style.display = "block";        
+    } else{
+        caja.style.display = "none";
+    }
+});
 
-// Null (valor intencionalmente vavio)
-console.log("Tipo de dato Null:");
-let direccion = null;
-console.log(direccion);
-console.log(typeof direccion);
-// Sale object porque es un error historico que no se corrigio
-
-// Object (estructura de datos con propiedades)
-let persona = {
-    nombre: 'Diego',
-    edad: '22',
-    ciudad: 'CDMX'
-};
-console.log("Tipo de dato Object:");
-console.log(typeof persona);
-console.log(persona);
-
-// Symbol (identificador unico)
-let id = Symbol('id');
-console.log("Tipo de dato Symbol:");
-console.log(id);
-console.log(typeof id);
-
-/* Se pone ; al final de cada linea de codigo
-por buenas practicas y evitar errores */
-
-let a = 'Pera';
-let fruta = 'Mango'; // usar nombres descriptivos para las variables
+// Cambiar de clase
+BtnClase.addEventListener("click", () =>{
+    caja.classList.toggle("activa");
+});
