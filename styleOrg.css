@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formulario {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.matriz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.seccion {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 150px;
+}
+
+.urgente { border-top: 5px solid red; }
+.importante { border-top: 5px solid orange; }
+.despues { border-top: 5px solid green; }
+.semana { border-top: 5px solid blue; }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.eliminar {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
