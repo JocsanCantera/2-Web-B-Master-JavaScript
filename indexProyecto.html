@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seguimiento de Libros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleProyecto.css">
+</head>
+<body>
+
+<header>
+    <h1>Seguimiento de Libros</h1>
+</header>
+
+<main>
+
+    <section class="form-section">
+        <form id="comentarioForm">
+            
+            <select id="libroSelect" required>
+                <option value="">Selecciona un libro</option>
+                <option value="libro1">Cien Años de Soledad</option>
+                <option value="libro2">1984</option>
+                <option value="libro3">El Principito</option>
+            </select>
+
+            <input 
+                type="text" 
+                id="comentarioInput" 
+                placeholder="Escribe tu comentario..."
+                required
+            >
+
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+
+    <section class="libros">
+
+        <div class="libro" id="libro1">
+            <h2>Cien Años de Soledad</h2>
+            <img src="https://www.rae.es/sites/default/files/portada_cien_anos_de_soledad_0.jpg" alt="Cien Años de Soledad">
+            <div class="comentarios"></div>
+        </div>
+
+        <div class="libro" id="libro2">
+            <h2>1984</h2>
+            <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg" alt="1984">
+            <div class="comentarios"></div>
+        </div>
+
+        <div class="libro" id="libro3">
+            <h2>El Principito</h2>
+            <img src="https://m.media-amazon.com/images/I/711MY86KW9L._AC_UF1000,1000_QL80_.jpg" alt="El Principito">
+            <div class="comentarios"></div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Proyecto</p>
+</footer>
+
+<script src="scriptProyecto.js"></script>
+
+</body>
+</html>
